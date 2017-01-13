@@ -1,0 +1,112 @@
+h1,h2,h3,h4,p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 13pt;
+    color: rgb(150, 150, 150);
+    line-height: 1.6;
+}
+
+header {
+    /* Attribute */
+    position: fixed;
+    margin: auto;
+    align: left;
+    width: 25%;
+    height: 100%;
+    background-color: rgb(19, 73, 140);
+    background-attachment: fixed;
+
+    /*Text*/
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
+
+div.center {
+    width: 74%;
+    float: right;
+    margin: auto;
+    padding: 0px;
+    border: 3px solid #000;
+}
+
+div.section {
+    /*Attribute*/
+    padding: 20px;
+    border: 3px solid #ddd;
+    margin: 3px;
+    height: 600px;
+    /*Text*/
+    color: rgb(120, 120, 120)
+}
+
+div.project {
+    /*Attribute*/
+    float: left;
+    padding: 20px;
+    border: 3px solid #ddd;
+    width: 49%;
+    margin: 3px;
+
+    /*Text*/
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
+
+div.about_section {
+    height: 350px;
+}
+
+div.contact_section {
+    height: 200px;
+}
+
+div.copyright {
+    margin-top: 30px;
+}
+
+a.resume {
+    /*Attribute*/
+    padding: 12px 30px; /*first num is top/bottom, second is left/right*/
+    margin-top: 23px; /*first num is top/bottom, second is left/right*/
+    margin-bottom: 30px; /*first num is top/bottom, second is left/right*/
+    border: 3px solid rgb(19, 73, 140);
+    border-radius: 7px;
+
+    /*Text*/
+    color: rgb(19, 73, 140);
+    display: inline-block;
+    font-size: 12pt;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+a.resume:hover {
+    color: turquoise;
+    border: 3px solid turquoise;
+    text-decoration: none;
+}
+
+a.inline:hover {
+    text-decoration: none;
+}
+
+a.icon {
+    margin: 10px;
+}
+
+a.icon:hover {
+    color: turquoise;
+}
