@@ -16,6 +16,9 @@ p {
     line-height: 1.6;
 }
 
+p.project_sec {
+    text-align: justify;
+}
 header {
     /* Attribute */
     position: fixed;
@@ -33,30 +36,34 @@ header {
 }
 
 div.center {
-    width: 74%;
+    width: 75%;
     float: right;
     margin: auto;
     padding: 0px;
-    border: 3px solid #000;
+    /*border: 3px solid #000;*/
 }
 
 div.section {
+    /*General Attributes for each section*/
+        
     /*Attribute*/
     padding: 20px;
-    border: 3px solid #ddd;
+    /*border-bottom: 2px solid #ddd;*/
     margin: 3px;
-    height: 600px;
+    height: 650px;
     /*Text*/
     color: rgb(120, 120, 120)
 }
 
 div.project {
+    /*Box for each project*/
+
     /*Attribute*/
     float: left;
     padding: 20px;
-    border: 3px solid #ddd;
+    /*border: 3px solid #ddd;*/
     width: 49%;
-    margin: 3px;
+    margin: 0px;
 
     /*Text*/
     color: rgb(120, 120, 120);
@@ -69,6 +76,7 @@ div.about_section {
 
 div.contact_section {
     height: 200px;
+    border: none;
 }
 
 div.copyright {
@@ -109,4 +117,10 @@ a.icon {
 
 a.icon:hover {
     color: turquoise;
+}
+
+hr {
+    width: 96%;
+    height: 1px;
+    background: #ddd;
 }
