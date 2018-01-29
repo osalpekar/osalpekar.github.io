@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    
+    <!--META-->
+    <meta charset="utf-8">
+    <title>Omkar Salpekar Website</title>
+    <meta name="author" description="Omkar Salpekar">
+    <meta name="description" description="Omkar's Website">
+    <meta name="viewport" description="width=device-width, initial-sclae=1">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Favicon-->
+    
+</head>
+<body>
+    <!--Left Header-->
+    <header class="header">
+        <a href="#" ><img class="img-circle" src="img/omkar_pic.jpg" alt="Omkar Pic" style="width:160px;height:160px"></a>
+        <h3>Omkar Salpekar</h3>
+        <div class="inner">
+                <a class="icon" href="http://www.github.com/osalpekar"><i class="fa fa-github fa-2x"></i></a>
+                <a class="icon" href="mailto:osalpekar@berkeley.edu"><i class="fa fa-envelope-o fa-2x"></i></a>    
+                <a class="icon" href="http://www.linkedin.com/in/omkarsalpekar"><i class="fa fa-linkedin fa-2x"></i></a> 
+        </div>
+        <div class="copyright">
+            <p>&copy 2017 Omkar Salpekar</p>
+        </div>
+    </header>
+
+    <!--Main Content-->
+    <div class="center">
+        
+        <div class="cs267 intro">
+            <h1>CS267 Homework 0</h1>
+            <br>
+            <p>I'm a 3rd year undergraduate studying Electrical Engineering and
+            Computer Science. I'm doing research at RISELab with Professor
+            Anthony Joseph in distributed systems. I'm particularly interested
+            in systems that make machine learning and managing large amounts of
+            data more efficient, and I find applications of this within
+            Internet of Things-related problems especially fascinating. I'd
+            like to understand current techniques of parallelizing large
+            workloads, their architectural implications, and future research
+            directions.</p>
+            <br>
+            <p>Graph processing is an interesting application space for
+            parallel computing, especially due to the ever-increasing size of
+            graphs and the range of possible queries on those graphs. Scaling
+            graphs to billions of edges requires distributing the graph across
+            several machines, but querying a graph spread across commodity machines is
+            much slower.</p>
+            <br>
+            <p>One interesting paper on this issue is "Time-Evolving Graph
+            Processing at Scale". This paper describes a system that optimizes
+            computations in graphs when the underlying graph is dynamic. As
+            such, it operates on snapshots of a graph, or a view of the entire
+            graph at a particular point in time. If the graph changes
+            before a computation completes, the system determines whether continuing
+            the computation would result in a reasonably correct answer, and
+            thus either continues as is or restarts with a newer graph
+            snapshot. The proposed system abstracts away a lot of the issues
+            with respect to parallelism by building on top of Resilient
+            Distributed Datasets (RDD's), the data abstraction provided by
+            Apache Spark.</p>
+            <br>
+            <p>References</p>
+            <p>Iyer et al "Time-Evolving Graph Processing at Scale" https://dl.acm.org/citation.cfm?id=2960419</p>
+        </div>
+    </div>
+</head>
+</html>
