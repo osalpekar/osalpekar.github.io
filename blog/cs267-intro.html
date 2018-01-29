@@ -40,8 +40,8 @@
             <h1>CS267 Homework 0</h1>
             <br>
             <p>I'm a 3rd year undergraduate studying Electrical Engineering and
-            Computer Science. I'm doing research at RISELab with Professor
-            Anthony Joseph in distributed systems. I'm particularly interested
+            Computer Science, and I'm doing research in distributed systems at RISELab with Professor
+            Anthony Joseph. I'm particularly interested
             in systems that make machine learning and managing large amounts of
             data more efficient, and I find applications of this within
             Internet of Things-related problems especially fascinating. I'd
@@ -55,31 +55,34 @@
             graphs to billions of edges requires distributing the graph across
             several machines, but querying a graph spread across commodity machines is
             much slower. Graphs used in production systems today model data
-            that typically changes very rapidly, and while real-time analytics
-            on such data would provide unique insights, it requires
-            parallelization to do efficiently at scale.</p>
+            that typically changes very rapidly, and the business case for real-time analytics
+            on such data continues to strengthen. As such,
+            parallelization is necessary to analyze large, dynamic graphs efficiently at scale.</p>
             <br>
             <p>One interesting paper on this issue is "Time-Evolving Graph
             Processing at Scale". This paper describes a system that optimizes
-            computations in graphs when the underlying graph is dynamic. As
-            such, it operates on snapshots of a graph, or a view of the entire
+            computations in graphs when the underlying graph is dynamic.
+            It operates on snapshots of a graph, or a view of the entire
             graph at a particular point in time. If the graph changes
             before a computation completes, the system determines whether continuing
-            the computation would result in a reasonably correct answer, and
-            thus either continues as is or restarts with a newer graph
+            the computation would produce in a result with reasonably small
+            error, and
+            then either continues as is or restarts with a newer graph
             snapshot. The proposed system abstracts away a lot of the issues
-            with respect to parallelism by building on top of Resilient
+            with respect to parallelism by representing the underlying graph
+            using Resilient
             Distributed Datasets (RDD's), the data abstraction provided by
             Apache Spark.</p>
             <br>
             <p>One advantage of this approach is that building on top of Apache
-            Spark allows for easier scaling, since the Spark deployment could
+            Spark allows for easier scaling, since the size of Spark deployment could
             be scaled to use as many commodity machines as needed, without
-            using a supercomputer. The system was successfully demonstrated on
+            using a supercomputer. The system successfully demonstrated
+            speedups for the PageRank algorithm on
             Twitter's follow graph, which has approximately 1.5 billion edges.
             Thus, such a system could allow for faster and more efficient
-            computation on even more dynamic data such as building sensors and
-            finance.</p>
+            computation on even more dynamic data sources such as building sensors and
+            financial markets.</p>
             <br>
             <p>References</p>
             <p>Iyer et al "Time-Evolving Graph Processing at Scale" https://dl.acm.org/citation.cfm?id=2960419</p>
