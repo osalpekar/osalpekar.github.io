@@ -10,18 +10,18 @@
     <meta name="viewport" description="width=device-width, initial-sclae=1">
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Favicon-->
     
 </head>
 <body>
     <!--Left Header-->
     <header class="header">
-        <a href="#" ><img class="img-circle" src="img/omkar_pic.jpg" alt="Omkar Pic" style="width:160px;height:160px"></a>
+        <a href="#" ><img class="img-circle" src="../img/omkar_pic.jpg" alt="Omkar Pic" style="width:160px;height:160px"></a>
         <h3>Omkar Salpekar</h3>
         <div class="inner">
                 <a class="icon" href="http://www.github.com/osalpekar"><i class="fa fa-github fa-2x"></i></a>
@@ -36,7 +36,7 @@
     <!--Main Content-->
     <div class="center">
         
-        <div class="cs267 intro">
+        <div class="cs267_section section">
             <h1>CS267 Homework 0</h1>
             <br>
             <p>I'm a 3rd year undergraduate studying Electrical Engineering and
@@ -54,7 +54,10 @@
             graphs and the range of possible queries on those graphs. Scaling
             graphs to billions of edges requires distributing the graph across
             several machines, but querying a graph spread across commodity machines is
-            much slower.</p>
+            much slower. Graphs used in production systems today model data
+            that typically changes very rapidly, and while real-time analytics
+            on such data would provide unique insights, it requires
+            parallelization to do efficiently at scale.</p>
             <br>
             <p>One interesting paper on this issue is "Time-Evolving Graph
             Processing at Scale". This paper describes a system that optimizes
@@ -68,6 +71,15 @@
             with respect to parallelism by building on top of Resilient
             Distributed Datasets (RDD's), the data abstraction provided by
             Apache Spark.</p>
+            <br>
+            <p>One advantage of this approach is that building on top of Apache
+            Spark allows for easier scaling, since the Spark deployment could
+            be scaled to use as many commodity machines as needed, without
+            using a supercomputer. The system was successfully demonstrated on
+            Twitter's follow graph, which has approximately 1.5 billion edges.
+            Thus, such a system could allow for faster and more efficient
+            computation on even more dynamic data such as building sensors and
+            finance.</p>
             <br>
             <p>References</p>
             <p>Iyer et al "Time-Evolving Graph Processing at Scale" https://dl.acm.org/citation.cfm?id=2960419</p>
